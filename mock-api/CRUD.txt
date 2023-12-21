@@ -1,0 +1,59 @@
+List
+GET
+'https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register'
+
+
+
+Find 
+GET
+https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/1
+
+
+Create 
+POST 
+https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register
+
+ {
+        "name": "name 66699",
+        "surname": "surname 66699",
+        "email": "email 66699",
+        "password": "password 6699",
+        "systemCreatedDate": 1702553307
+}
+
+curl --location 'https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register' \
+--header 'Content-Type: application/json' \
+--data ' {
+        "name": "name 666",
+        "surname": "surname 666",
+        "email": "email 666",
+        "password": "password 66",
+        "systemCreatedDate": 1702553307
+}'
+
+
+
+DELETE 
+https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/1
+curl --location --request DELETE 'https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/1'
+
+
+PUT 
+https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/6
+ {
+        "name": "name 66699",
+        "surname": "surname 66699",
+        "email": "email 66699",
+        "password": "password 6699",
+        "systemCreatedDate": 1702553307
+}
+
+curl --location --request PUT 'https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/6' \
+--header 'Content-Type: application/json' \
+--data ' {
+        "name": "name 66699",
+        "surname": "surname 66699",
+        "email": "email 66699",
+        "password": "password 6699",
+        "systemCreatedDate": 1702553307
+}'
