@@ -8,6 +8,7 @@ import { withTranslation } from 'react-i18next';
 import './DarkMode/dark.css';
 import DarkMode from './DarkMode/DarkMode';
 import { Link } from 'react-router-dom';
+import logo from "../image/logo192.png";
 
 // CLASS
 class Header extends Component {
@@ -200,12 +201,13 @@ class Header extends Component {
                 {/* start Second Navbar */}
                 <nav
                     id="navbar_second_id"
-                    className="navbar navbar-expand-md navbar-dark bg-dark fixed-top mb-3">
+                    className="navbar navbar-expand-md navbar-dark fixed-top mb-3"
+                    style={{backgroundColor: "#161A40"}}>
                     <div className="container">
                         <a
                             className="navbar-brand"
                             href={this.props.url}>
-                            <i className={this.props.logo}></i>
+                            <img src={logo} alt="" style={{height:"35px"}}/>
                         </a>
                         <button
                             className="navbar-toggler d-lg-none"
@@ -221,13 +223,13 @@ class Header extends Component {
                         <div className="collapse navbar-collapse" id="collapsibleNavId">
                             <ul className="navbar-nav me-auto mt-2 mt-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="#" aria-current="page">
+                                    <a className="nav-link active" href="/" aria-current="page">
                                         {this.props.t('home_page')} <span className="visually-hidden">(current)</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#services_id">
-                                        {this.props.t('services')}
+                                        {this.props.t('projects')}
                                     </a>
                                 </li>
                                 <li className="nav-item">

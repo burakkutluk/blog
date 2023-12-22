@@ -32,7 +32,7 @@ class Footer extends Component {
     render() {
         return (
             <React.Fragment>
-                <footer className="bg-dark text-white text-center fixed-bottom44">
+                <footer className="text-white text-center fixed-bottom44" style={{backgroundColor: "#161A40"}}>
                     {/* Grid container */}
                     <div className="container p-4 pb-0">
                         {/* Section: Social media */}

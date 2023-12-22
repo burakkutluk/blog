@@ -13,7 +13,7 @@ i18n.use(initReactI18next).init({
                    'contact':'Contact',
                    'search':'Search',
                    'languages':'Languages',
-                   'services':'Services',
+                   'projects':'Projects',
                    'register':'Register',
                    'cleaner':'Cleaner',
                    'added':'Added',
@@ -45,7 +45,7 @@ i18n.use(initReactI18next).init({
                    'contact':'İletişim',
                    'search':'Arama',
                    'languages':'Diller',
-                   'services':'Servisler',
+                   'projects':'Projeler',
                    'cleaner':'Temizle',
                    'added':'Ekle',
                    'updated':'Güncelle',
@@ -62,9 +62,9 @@ i18n.use(initReactI18next).init({
                    'register_update':"Kayıt Güncelle",
                    'register_view':"Kayıtları Göster",
                    'register_create':"Kayıt Ekle",
-                   'is_read':"Okunuz mu ?",
+                   'is_read':"KVKK sözleşmesini onaylıyor musunuz?",
                    'close':'Kapat',
-                   'not_Showing':'Bir Daha Gösterme',
+                   'not_Showing':'Onaylıyorum',
                    'admin_register':'Admin'
                    
                 }

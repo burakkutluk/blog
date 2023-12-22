@@ -4,6 +4,8 @@ import { RiTodoFill } from "react-icons/ri";
 import { IoNewspaperSharp } from "react-icons/io5";
 import { BiSolidMoviePlay } from "react-icons/bi";
 import { GiMagicPortal } from "react-icons/gi";
+import { ImGithub } from "react-icons/im";
+import { BsLinkedin } from "react-icons/bs";
 
 /* Main Css */
 import "./main.css";
@@ -55,21 +57,19 @@ class Main extends Component {
                 <h4>Html5, Css3, Js, React JS, Git</h4>
                 <a
                   href="https://www.linkedin.com/in/burak-kutluk-3a1128199/"
-                  className="btn btn-outline-primary shadow m-lg-2 fs-4"
+                  className="btn btn-outline-primary shadow m-lg-2 fs-4 "
                 >
-                  Linkedin
+                  <i>
+                    <BsLinkedin size={45} color="black" />
+                  </i>
                 </a>
                 <a
                   href="https://github.com/burakkutluk"
-                  className="btn btn-outline-danger shadow m-lg-2 fs-4"
+                  className="btn btn-outline-primary radius-10 shadow m-lg-2 fs-4 "
                 >
-                  GitHub
-                </a>
-                <a
-                  href="https://github.com/burakkutluk"
-                  className="btn btn-outline-warning shadow m-lg-2 fs-4"
-                >
-                  Git
+                  <i>
+                    <ImGithub size={45} color="black" />
+                  </i>
                 </a>
               </div>
             </div>
@@ -95,7 +95,6 @@ class Main extends Component {
                       href="https://github.com/burakkutluk/To-do-List"
                       style={{
                         textDecoration: "none",
-                        color: "black",
                         cursor: "pointer",
                       }}
                     >
@@ -118,7 +117,6 @@ class Main extends Component {
                       href="https://github.com/burakkutluk/react-news-app-master"
                       style={{
                         textDecoration: "none",
-                        color: "black",
                         cursor: "pointer",
                       }}
                     >
@@ -141,7 +139,6 @@ class Main extends Component {
                       href="https://github.com/burakkutluk/movie"
                       style={{
                         textDecoration: "none",
-                        color: "black",
                         cursor: "pointer",
                       }}
                     >
@@ -165,7 +162,6 @@ class Main extends Component {
                       href="https://github.com/burakkutluk/react-rick-and-morty"
                       style={{
                         textDecoration: "none",
-                        color: "black",
                         cursor: "pointer",
                       }}
                     >
@@ -202,7 +198,7 @@ class Main extends Component {
                         <h4 class="card-title">
                           Introduction to JavaScript: Basics
                         </h4>
-                        <p class="card-text line-clamp5">
+                        <p class="card-text line-clamp4">
                           JavaScript is the programming language that lets the
                           Internet work. The Internet would be nothing without
                           JavaScript and in this lesson, you will find out why.
@@ -218,7 +214,7 @@ class Main extends Component {
                   </div>
 
                   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-                    <div class="card">
+                    <div class="card mb-4">
                       <img
                         class="cardImg card-img-top mb-3"
                         src={ReactImg}
@@ -229,7 +225,7 @@ class Main extends Component {
                           The “One” Mental Switch To Easily Shift From React to
                           Respond
                         </h4>
-                        <p class="card-text line-clamp5">
+                        <p class="card-text line-clamp4">
                           Had you met me a decade ago, you’d have found an
                           impulsive and arrogant kind of individual. Life, for
                           me, was like being caught in a raging storm, reacting
@@ -246,7 +242,7 @@ class Main extends Component {
                   </div>
 
                   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-                    <div class="card">
+                    <div class="card mb-4">
                       <img
                         class="cardImg card-img-top mb-3"
                         src={frontendWhat}
@@ -256,7 +252,7 @@ class Main extends Component {
                         <h4 class="card-title">
                           Mom, This is What Front-End Means.
                         </h4>
-                        <p class="card-text line-clamp5">
+                        <p class="card-text line-clamp4">
                           The front-end of a website is exactly what you’re
                           looking at as you read this article.{" "}
                         </p>
@@ -271,7 +267,7 @@ class Main extends Component {
                   </div>
 
                   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-                    <div class="card">
+                    <div class="card mb-4">
                       <img
                         class="cardImg card-img-top mb-3"
                         src={Angular}
@@ -281,7 +277,7 @@ class Main extends Component {
                         <h4 class="card-title">
                           What frontend JavaScript-framework should I use?
                         </h4>
-                        <p class="card-text line-clamp5">
+                        <p class="card-text line-clamp4">
                           When you become a frontend developer focused on
                           JavaScript, you are easily overwhelmed by the copious
                           amount of things there is to know and to learn, in
@@ -298,7 +294,7 @@ class Main extends Component {
                   </div>
 
                   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-                    <div class="card">
+                    <div class="card mb-4">
                       <img
                         class="cardImg card-img-top mb-3"
                         src={CSS}
@@ -309,7 +305,7 @@ class Main extends Component {
                           Modern CSS Features That Every Web Developer Should
                           Know
                         </h4>
-                        <p class="card-text line-clamp5">
+                        <p class="card-text line-clamp4">
                           {" "}
                           The HTML standard offers semantic tags to create the
                           basic structure of a web page, but it doesn’t offer a
@@ -328,7 +324,7 @@ class Main extends Component {
                   </div>
 
                   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-                    <div class="card">
+                    <div class="card mb-4">
                       <img
                         class="cardImg card-img-top mb-3"
                         src={API}
@@ -339,7 +335,7 @@ class Main extends Component {
                           Web Speech API: What Works, What Doesn’t, and How to
                           Improve It by Linking It to a GPT Language Model
                         </h4>
-                        <p class="card-text line-clamp5">
+                        <p class="card-text line-clamp4">
                           I am of the idea that modern technologies enable today
                           much simpler and natural human-computer interactions
                           than what current software actually proposes.
@@ -364,7 +360,7 @@ class Main extends Component {
           {/* start about_id */}
           <section id="about_id">
             <div className="about_service">
-              <h2 className="text-center text-white mb-5 mt-5"> About Me</h2>
+              <h2 className="text-center text-white mb-2 mt-2"> About Me</h2>
               <div className="container">
                 <div className="row ">
                   <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
@@ -390,16 +386,7 @@ class Main extends Component {
                       able to think critically and come up with creative
                       solutions. Communication skills Web developers need to be
                       able to communicate effectively with both technical and
-                      non-technical audiences. They should be able to explain
-                      complex technical concepts in a clear and concise way.
-                      Collaboration skills Web development is often a
-                      collaborative process. Web developers need to be able to
-                      work effectively with other developers, designers, and
-                      project managers. They should be able to communicate
-                      effectively and be willing to compromise. Adaptability The
-                      web industry is constantly changing, so web developers
-                      need to be adaptable. They should be willing to learn new
-                      technologies and adapt to new trends.
+                      non-technical audiences.
                     </p>
                   </div>
                 </div>
@@ -413,10 +400,7 @@ class Main extends Component {
           {/* start contact_id */}
           <section id="contact_id">
             <div className="contact_service">
-              <h2 className="text-center  mb-4 text-dark text-uppercase">
-                {" "}
-                İletişim
-              </h2>
+              <h2 className="text-center  mb-4 text-uppercase"> İletişim</h2>
               <div className="container">
                 <div className="row">
                   {/* MAP */}
@@ -529,10 +513,10 @@ class Main extends Component {
           <a
             href="#header"
             id="backToTop"
-            className="btn bg-primary"
-            style={{ width: "5%", height: "10%" }}
+            className="btn "
+            style={{ width: "80px", height: "10%", backgroundColor: "#161A70" }}
           >
-            <i class="fa-solid fa-arrow-up d-flex justify-content-lg-center mt-2 fs-1 "></i>
+            <i class="fa-solid fa-arrow-up d-flex justify-content-center mt-2 fs-1 "></i>
           </a>
         </main>
         {/* end codes Main  */}

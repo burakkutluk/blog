@@ -135,17 +135,17 @@ function RegisterCreate({ t, i18n, props }) {
   // RETURN
   return (
     <React.Fragment>
-      <h1 className="text-center text-primary display-5">{t('register_create')}</h1>
+      <h1 className="text-center text-primary display-5 mt-5 mb-5">{t('register_create')}</h1>
       <div className="container">
         <div className='row'>
           <div className="col-xs-12 col-md-2 col-lg-2">
           </div>
 
           {/* USERNAME */}
-          <div className="col-xs-12 col-md-8 col-lg-8">
+          <div className="col-xs-12 col-md-8 col-lg-8 w-50 " style={{marginLeft: "130px"}}>
             <form onSubmit={onSubmitForm}>
               <input
-                className="form-control me-2 mb-2"
+                className="form-control me-2 mb-3"
                 type="text"
                 id="username"
                 name="username"
@@ -158,7 +158,7 @@ function RegisterCreate({ t, i18n, props }) {
 
               {/* SURNAME */}
               <input
-                className="form-control me-2 mb-2"
+                className="form-control me-2 mb-3"
                 type="text"
                 id="surname"
                 name="surname"
@@ -171,7 +171,7 @@ function RegisterCreate({ t, i18n, props }) {
 
               {/* EMAİL */}
               <input
-                className="form-control me-2 mb-2"
+                className="form-control me-2 mb-3"
                 type="email"
                 id="email"
                 name="email"
@@ -184,7 +184,7 @@ function RegisterCreate({ t, i18n, props }) {
 
               {/* PASSWORD */}
               <input
-                className="form-control me-2 mb-2"
+                className="form-control me-2 mb-3"
                 type="password"
                 id="password"
                 name="password"
@@ -206,7 +206,7 @@ function RegisterCreate({ t, i18n, props }) {
                   required={true}
                   onChange={registerIsReadOnChange}
                   defaultChecked=""
-                  title="Okunuz mu ?"
+                  title="KVKK sözleşmesini onaylıyor musunuz?"
                   data-bs-toggle="modal"
                   data-bs-target="#modalId"
                 />
@@ -235,7 +235,7 @@ function RegisterCreate({ t, i18n, props }) {
                 >
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="modalTitleId">
+                      <h5 class="modal-title text-black" id="modalTitleId">
                       {t('is_read')}
                       </h5>
                       <button
@@ -245,8 +245,50 @@ function RegisterCreate({ t, i18n, props }) {
                         aria-label="Close"
                       ></button>
                     </div>
-                    <div class="modal-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, expedita adipisci. Id recusandae necessitatibus mollitia? Dicta, eos magni qui sint aut ab est saepe exercitationem sunt placeat eaque officiis quam?
-                    Repellat praesentium alias quasi voluptas voluptate veritatis! Illum deleniti fugit tenetur eius molestiae aspernatur facilis vero veritatis, a esse ducimus dolorum maiores quasi, nesciunt enim repellendus facere, quam vel accusamus?</div>
+                    <div class="modal-body text-black">KVKK SÖZLEŞMESİ
+
+1. Taraflar:
+
+1.1. Veri Sorumlusu:
+[Şirket Adı, Vergi Numarası, Adresi]
+
+1.2. Veri Sahibi:
+[Üye Adı, Soyadı, E-posta Adresi]
+
+2. Amaç:
+Bu sözleşme, Veri Sahibi'nin kişisel verilerinin işlenmesine ilişkin olarak KVKK hükümleri çerçevesinde taraflar arasında hak ve yükümlülükleri belirlemektedir.
+
+3. Kişisel Verilerin İşlenme Amaçları:
+Veri Sahibi'nin kişisel verileri, üyelik işlemleri, bildirimler, hizmet sunumu, güvenlik, istatistiksel analizler gibi amaçlarla işlenecektir.
+
+4. Kişisel Verilerin İşlenme Şekli:
+Kişisel veriler, otomatik veya otomatik olmayan yöntemlerle, Veri Sorumlusu tarafından işlenecektir.
+
+5. İşlenen Kişisel Veriler:
+İşbu sözleşme kapsamında işlenecek kişisel veriler; ad, soyad, iletişim bilgileri gibi Veri Sahibi tarafından sağlanan bilgileri içermektedir.
+
+6. Kişisel Verilerin Aktarılması:
+Veri Sahibi'nin kişisel verileri, yasal düzenlemelere uygun olarak, işbu sözleşme kapsamında belirtilen amaçlar doğrultusunda 3. kişilere aktarılabilecektir.
+
+7. Kişisel Veri Güvenliği:
+Veri Sorumlusu, kişisel verilerin güvenliğini sağlamak için gerekli teknik ve idari tedbirleri alacaktır.
+
+8. Veri Sahibinin Hakları:
+Veri Sahibi, KVKK kapsamında kendisine tanınan haklara ilişkin taleplerini [Veri Sorumlusu'nun iletişim bilgileri] adresine yazılı olarak iletebilir.
+
+9. Sözleşmenin Yürürlüğe Girmesi:
+Bu sözleşme, Veri Sahibi tarafından kabul edildikten sonra yürürlüğe girecektir.
+
+10. Değişiklikler:
+Veri Sorumlusu, bu sözleşmede değişiklik yapma hakkını saklı tutar ve değişiklikler sitede ilan edildikten sonra yürürlüğe girecektir.
+
+Bu sözleşme, Veri Sahibi tarafından kabul edildiğinde taraflar arasında bağlayıcıdır.
+
+Veri Sorumlusu:
+[Şirket Adı, İmza, Tarih]
+
+Veri Sahibi:
+[Üye Adı, Soyadı, İmza, Tarih]</div>
                     <div class="modal-footer">
                       <button
                         type="button"

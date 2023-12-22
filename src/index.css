@@ -135,12 +135,12 @@ i {
 /* dark mode */
 :root {
   --body_background: #e3e3e3 !important;
-  --body_color: #414141 !important;
+  --body_color: #161A30 !important;
 }
 
 /* dark mode */
 [data-theme="dark"] {
-  --body_background: #414141 !important;
+  --body_background: #161A30 !important;
   --body_color: #e3e3e3 !important;
 }
 
@@ -155,7 +155,7 @@ i {
 #navbar_first_id {
   max-height: 4rem;
   max-width: 100% !important;
-  background-color: black;
+  background-color: rgba(0, 5, 58, 0.827);
   color: white;
   opacity: 0.8;
   position: sticky;
